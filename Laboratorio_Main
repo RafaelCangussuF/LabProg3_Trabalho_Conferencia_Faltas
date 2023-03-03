@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Conferência de Participantes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1>Conferência de Participantes</h1>
+		<div id="evento-info">
+      			<h2>Informações do Evento</h2>
+      			<p>Data: <span id="data-evento">XX/XX/XXXX</span></p>
+      			<p>Hora: <span id="hora-evento">XX:XX</span></p>
+      			<p>Local: <span id="local-evento">Local do Evento</span></p>
+    		</div>
+		<form id="filter-form">
+			<label for="filter">Filtrar por:</label>
+			<select id="filter">
+				<option value="all">Todos</option>
+				<option value="cfg-ativa">CFG Ativa</option>
+				<option value="cfg-reserva">CFG Reserva</option>
+				<option value="cg">CG</option>
+			</select>
+		</form>
+	</div>
+	<div id="participants"></div>
+	<button id="export-button">Exportar</button>
+</body>
+</html>
